@@ -197,4 +197,10 @@ body{
     .left img{ 
         padding-left: 40px;
     }
+    .contact3, .contact2{
+        
+        width: 100%;
+        text-align: center;
+    }
+   
 }
