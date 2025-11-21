@@ -359,71 +359,6 @@ button:hover {
   color: var(--navy);
 }
 
-/* Tablet Layout - 2 columns */
-/* @media (max-width: 992px) {
-  .testimonial {
-    flex: 1 1 calc(50% - 2rem);
-    max-width: 45%;
-  }
-} */
-
-/* Mobile Layout - Single Column
-@media (max-width: 768px) {
-  .testimonials {
-    padding: 3rem 1rem;
-  }
-
-  .testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .testimonial-slider {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .testimonial {
-    flex: none;
-    width: 100%;
-    max-width: 100%;
-    min-width: auto;
-    padding: 2rem 1.5rem;
-  }
-
-  .testimonial::before {
-    font-size: 3rem;
-    top: -5px;
-    left: 15px;
-  }
-
-  .testimonial p {
-    font-size: 1rem;
-  }
-
-  .testimonial .client-info {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .testimonial {
-    padding: 1.5rem;
-  }
-
-  .testimonial .stars {
-    font-size: 1.3rem;
-  }
-
-  .testimonial p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-} */
-
 /* Contact Section */
 .contact {
   display: flex;
@@ -450,7 +385,7 @@ button:hover {
   margin-bottom: 1rem;
   min-width: 220px;
   flex: 1 1 220px;
-  color: var(--text-dark);
+  color: var(--primary-red);
   border: 1px solid var(--gray);
   transition: transform 0.3s ease;
 }
@@ -459,25 +394,23 @@ button:hover {
   transform: translateY(-3px);
 }
 
-.contact h1,
-.contact h2 {
+.contact4 p a:hover {
   color: var(--primary-red);
-  margin-bottom: 1rem;
-  font-weight: bold;
+  transform: translateX(3px);
 }
-
-.contact h1 {
-  font-size: 1.5rem;
-}
-
-.contact h2 {
-  font-size: 1.3rem;
-}
-
 .contact p {
   color: var(--text-dark);
   margin-bottom: 0.8rem;
   line-height: 1.5;
+}
+
+.contact4 p a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
 }
 
 .contact4 img {
@@ -485,6 +418,21 @@ button:hover {
   height: 24px;
   vertical-align: middle;
   margin-right: 0.8rem;
+}
+
+.contact4 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact4 a:hover {
+  color: var(--primary-red);
+  transform: translateX(3px);
 }
 
 /* Credit Section */
