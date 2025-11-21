@@ -33,6 +33,12 @@
       content="https://jotestateagency.com/assets/images/logo.jpeg"
     />
     <title>J.ola Estate</title>
+    <link rel="preload" href="./styles.css" as="style" />
+    <link rel="preload" href="./assets/images/home.jpg" as="image" />
+    <link rel="prefetch" href="./assets/images/property-sale.jpg" as="image" />
+    <link rel="prefetch" href="./assets/images/consultancy.jpg" as="image" />
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="preconnect" href="https://maps.googleapis.com" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -66,7 +72,16 @@
         <div class="service-content">
           <img
             src="./assets/images/property-sale.jpg"
+            srcset="
+              ./assets/images/responsive/property-sale-480.jpg  480w,
+              ./assets/images/responsive/property-sale-960.jpg  960w,
+              ./assets/images/property-sale.jpg                1280w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 350px"
             alt="Property Sale/Purchase"
+            loading="lazy"
+            width="350"
+            height="200"
           />
           <h2>Property Sale/Purchase</h2>
           <p>
@@ -86,7 +101,16 @@
         <div class="service-content">
           <img
             src="./assets/images/consultancy.jpg"
+            srcset="
+              ./assets/images/responsive/consultancy-480.jpg  480w,
+              ./assets/images/responsive/consultancy-960.jpg  960w,
+              ./assets/images/consultancy.jpg                1280w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 350px"
             alt="Real Estate Consultancy"
+            loading="lazy"
+            width="350"
+            height="200"
           />
           <h2>Real estate consultancy</h2>
           <p>
@@ -106,7 +130,16 @@
         <div class="service-content">
           <img
             src="./assets/images/development.jpg"
+            srcset="
+              ./assets/images/responsive/development-480.jpg  480w,
+              ./assets/images/responsive/development-960.jpg  960w,
+              ./assets/images/development.jpg                1280w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 350px"
             alt="Property Development"
+            loading="lazy"
+            width="350"
+            height="200"
           />
           <h2>Property Development</h2>
           <p>
@@ -125,7 +158,19 @@
           </div>
         </div>
         <div class="service-content">
-          <img src="./assets/images/management.jpg" alt="Property Management" />
+          <img
+            src="./assets/images/management.jpg"
+            srcset="
+              ./assets/images/responsive/management-480.jpg  480w,
+              ./assets/images/responsive/management-960.jpg  960w,
+              ./assets/images/management.jpg                1280w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 350px"
+            alt="Property Management"
+            loading="lazy"
+            width="350"
+            height="200"
+          />
           <h2>Property Management</h2>
           <p>
             Our Property Management service takes the stress out of owning
@@ -142,7 +187,19 @@
         </div>
 
         <div class="service-content">
-          <img src="./assets/images/survey.jpg" alt="Land Survey" />
+          <img
+            src="./assets/images/survey.jpg"
+            srcset="
+              ./assets/images/responsive/survey-480.jpg  480w,
+              ./assets/images/responsive/survey-960.jpg  960w,
+              ./assets/images/survey.jpg                1280w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 350px"
+            alt="Land Survey"
+            loading="lazy"
+            width="350"
+            height="200"
+          />
           <h2>Land Survey</h2>
           <p>
             Our land surveying service ensures you get accurate,
@@ -166,7 +223,16 @@
         <div class="service-content">
           <img
             src="./assets/images/lease.jpg"
+            srcset="
+              ./assets/images/responsive/lease-480.jpg  480w,
+              ./assets/images/responsive/lease-960.jpg  960w,
+              ./assets/images/lease.jpg                1280w
+            "
+            sizes="(max-width: 600px) 90vw, (max-width: 1200px) 45vw, 350px"
             alt="Lease Agreement & Documentation"
+            loading="lazy"
+            width="350"
+            height="200"
           />
           <h2>Lease Agreement & Documentation</h2>
           <p>
@@ -195,7 +261,19 @@
       <h2 id="about-header">About us</h2>
       <div class="about" id="about">
         <div class="left">
-          <img src="./assets/images/face1.jpeg" />
+          <img
+            src="./assets/images/face1.jpeg"
+            srcset="
+              ./assets/images/responsive/face1-480.jpeg  480w,
+              ./assets/images/responsive/face1-960.jpeg  960w,
+              ./assets/images/face1.jpeg                1280w
+            "
+            sizes="(max-width: 768px) 90vw, 320px"
+            alt="Portrait of Hon. Jayeola Toriola"
+            loading="lazy"
+            width="300"
+            height="400"
+          />
           <h3>Hon. Jayeola Toriola</h3>
         </div>
         <div class="right">
@@ -314,16 +392,19 @@
     <div class="contact" id="contact">
       <div class="contact-map">
         <h2>Find Us</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1251100889585!2d3.3769655752301753!3d6.50584319348647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf582e584eb%3A0x9094912e97da1c09!2s41%20Commercial%20Ave%2C%20Sabo%20yaba%2C%20Lagos%20101245%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1763354431055!5m2!1sen!2suk"
-          height="250"
-          style="border: 0; border-radius: 0.5rem"
-          width="90%"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+        <div class="map-shell" data-map-loaded="false">
+          <iframe
+            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1251100889585!2d3.3769655752301753!3d6.50584319348647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cf582e584eb%3A0x9094912e97da1c09!2s41%20Commercial%20Ave%2C%20Sabo%20yaba%2C%20Lagos%20101245%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1763354431055!5m2!1sen!2suk"
+            width="90%"
+            height="250"
+            style="border: 0; border-radius: 0.5rem"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+          <button class="map-load-btn">Load Map</button>
+        </div>
       </div>
       <!-- <div class="contact1">
         <h1>
@@ -351,27 +432,35 @@
         <h2>Socials</h2>
 
         <p>
-          <a href="https://www.instagram.com/jayeolatoriola/">
+          <a
+            href="https://www.instagram.com/jayeolatoriola/"
+            class="contactlink"
+          >
             <img src="./assets/images/instagram.svg" alt="instagram Logo" />
             Instagram</a
           >
         </p>
 
         <p>
-          <a href="https://www.facebook.com/J.olatoriola/?locale=en_GB">
+          <a
+            href="https://www.facebook.com/J.olatoriola/?locale=en_GB"
+            class="contactlink"
+          >
             <img src="./assets/images/facebook.svg" alt="facebook logo" />
             Facebook</a
           >
         </p>
 
         <p>
-          <a href="https://www.tiktok.com/@jayeolatoriola?lang=en"
+          <a
+            href="https://www.tiktok.com/@jayeolatoriola?lang=en"
+            class="contactlink"
             ><img src="./assets/images/tiktok.svg" alt="tiktok logo" /> Tiktok
           </a>
         </p>
 
         <p>
-          <a href="https://x.com/jayetori">
+          <a class="contactlink" href="https://x.com/jayetori">
             <img src="./assets/images/twitter-x.svg" alt="X logo" /> X
           </a>
         </p>
@@ -386,5 +475,36 @@
     show a link to a whatsapp Mesage Box -->
 
     <!-- testimonials section -->
+    <script>
+      const mapShell = document.querySelector(".map-shell");
+      if (mapShell) {
+        const iframe = mapShell.querySelector("iframe");
+        const loadBtn = mapShell.querySelector(".map-load-btn");
+
+        const loadMap = () => {
+          if (mapShell.dataset.mapLoaded === "true") return;
+          iframe.src = iframe.dataset.src;
+          mapShell.dataset.mapLoaded = "true";
+          loadBtn?.remove();
+        };
+
+        if ("IntersectionObserver" in window) {
+          new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  loadMap();
+                }
+              });
+            },
+            { rootMargin: "200px" }
+          ).observe(mapShell);
+        }
+
+        loadBtn?.addEventListener("click", () => {
+          loadMap();
+        });
+      }
+    </script>
   </body>
 </html>
