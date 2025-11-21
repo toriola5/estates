@@ -1,182 +1,183 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    margin: 0%;
-    font-family: 'Montserrat' , serif;
+body {
+  margin: 0%;
+  font-family: "Montserrat", serif;
 }
-.home-page{
-    background-image: url(./assets/images/home.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+.home-page {
+  background-image: url(./assets/images/home.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
-.home-nav{
-    display: flex;
-    background-color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
+.home-nav {
+  display: flex;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.home-nav a{
-    font-size: 2rem;
-    transition: transform 0.5s ease-in-out;
+.home-nav a {
+  font-size: 2rem;
+  transition: transform 0.5s ease-in-out;
 }
-.home-nav a:hover{
-    color: red;
-    transform: rotate(2deg) scale(1.05);
+.home-nav a:hover {
+  color: red;
+  transform: rotate(2deg) scale(1.05);
 }
-.nav-item{
-    flex-basis: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.nav-item {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.nav-item a{
-    color: #333745;
+.nav-item a {
+  color: #333745;
 }
-.nav-logo a{
-    color: red;
-    font-weight: 900;
-    font-size: 3rem;
+.nav-logo a {
+  color: red;
+  font-weight: 900;
+  font-size: 3rem;
 }
-.nav-logo img{
-    width: 100px;
-    height: 30px;
-    padding: 0px;
+.nav-logo img {
+  width: 100px;
+  height: 30px;
+  padding: 0px;
 }
-.nav-logo{
-    flex-basis: 20%;
-    display: flex;
-    justify-content: center;
+.nav-logo {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
 }
-.home-page a{
-    text-decoration: none;
+.home-page a {
+  text-decoration: none;
 }
-.message{
-    width: fit-content;
-    margin-top: 18%;
-    margin-left: 100px;
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    font-family: 'Montserrat' , serif;
+.message {
+  width: fit-content;
+  margin-top: 18%;
+  margin-left: 100px;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", serif;
 }
-.message span, #services-head span{
-    color: red;
+.message span,
+#services-head span {
+  color: red;
 }
-.message h1{
-    margin: 0px;
+.message h1 {
+  margin: 0px;
 }
-.button1{
-    background-color: red;
-    border: 1px solid red;
-    color: white;
-    padding-left: 20px 10px;
-    width: 200px;
-    height: 60px;
-    border-radius: 20px;
-    font-size: 2rem;
-    font-family: 'Montserat' , serif;
-    transition: transform 0.7s ease-in-out;
+.button1 {
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  padding-left: 20px 10px;
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-family: "Montserat", serif;
+  transition: transform 0.7s ease-in-out;
 }
-.button1:hover{
-    background-color: white;
-    color: red;
-    transform: scale(1.2);
-}
-
-.services{
-    width: 90%;
-    margin-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.button1:hover {
+  background-color: white;
+  color: red;
+  transform: scale(1.2);
 }
 
-.service-content{
-    flex-basis: 350px;
-    height: fit-content;
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    font-size: 20px;
-    transition: transform 0.7s ease-in-out;
-}
-.service-content:hover{
-    background-color: #333745;
-    color: white;
-    transform: scale(1.05);
-}
-.service-content p{
-    font-family: 'Lato' , sans-serif;
-}
-.service-content h2{
-    margin: 0px;
-}
-#services-head{
-    text-align: center;
-    font-size: 3rem;
+.services {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.service-content .button1{
-    width: 200px;
-    height: 40px;
+.service-content {
+  flex-basis: 350px;
+  height: fit-content;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: transform 0.7s ease-in-out;
+}
+.service-content:hover {
+  background-color: #333745;
+  color: white;
+  transform: scale(1.05);
+}
+.service-content p {
+  font-family: "Lato", sans-serif;
+}
+.service-content h2 {
+  margin: 0px;
+}
+#services-head {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.service-content div{
-    display: flex;
-    justify-content: center;
-}
-.about{
-    display: flex;
-    background-color: #33374590;
+.service-content .button1 {
+  width: 200px;
+  height: 40px;
 }
 
-.left img{
-    width: 300px;
-    height: 400px;
-    border-radius: 10%;
-    padding: 30px;
+.service-content div {
+  display: flex;
+  justify-content: center;
 }
-.right{
-    color: white;
-    font-size: 1.2rem;
-}
-.right h2{
-    font-weight: 900;
-    font-size: 3rem;
-    margin: 0px;
-}
-.contact{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color:white
-}
-.credit{
-    background-color: #f8f9fa;
-    color: red;
+.about {
+  display: flex;
+  background-color: #33374590;
 }
 
-@media (max-width: 570px){
-    .home-page{
-        height: 30vh;
-    }
-    .home-nav{
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-    .home-nav a{
-        font-size: 0.8rem;
-    }
-    .message{
-        font-size: 0.8rem;
-        margin-top: 3%;
-    }
-    .message button{
+.left img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10%;
+  padding: 30px;
+}
+.right {
+  color: white;
+  font-size: 1.2rem;
+}
+.right h2 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 0px;
+}
+.contact {
+  border: 5px solid black;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.credit {
+  background-color: #f8f9fa;
+  color: red;
+}
+
+@media (max-width: 570px) {
+  .home-page {
+    height: 30vh;
+  }
+  .home-nav {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .home-nav a {
+    font-size: 0.8rem;
+  }
+  .message {
+    font-size: 0.8rem;
+    margin-top: 3%;
+  }
+  .message button {
     background-color: red;
     border: 1px solid red;
     color: white;
@@ -185,22 +186,16 @@ body{
     height: 25px;
     border-radius: 20px;
     font-size: 0.7rem;
-    font-family: 'Montserat' , serif;
-    }
+    font-family: "Montserat", serif;
+  }
 
-    .about{
+  .about {
     flex-direction: column;
-    }
-    .right{
-        padding: 10px;
-    }
-    .left img{ 
-        padding-left: 40px;
-    }
-    .contact3, .contact2{
-        
-        width: 100%;
-        text-align: center;
-    }
-   
+  }
+  .right {
+    padding: 10px;
+  }
+  .left img {
+    padding-left: 40px;
+  }
 }
