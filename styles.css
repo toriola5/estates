@@ -141,6 +141,20 @@ button:hover {
   padding: 1rem 2.5rem;
 }
 
+.button-secondary {
+  background: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+  box-shadow: none;
+  margin-left: 1rem;
+}
+
+.button-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
 /* Services Section */
 #services-head {
   text-align: center;
