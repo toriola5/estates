@@ -57,6 +57,30 @@ nav.home-page {
   display: block;
 }
 
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle:focus {
+  outline: 2px solid var(--primary-red);
+  outline-offset: 2px;
+}
+
+.nav-toggle-bar {
+  width: 24px;
+  height: 3px;
+  background: var(--navy);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
 .nav-item {
   display: flex;
   gap: 2rem;
@@ -480,7 +504,7 @@ button:hover {
   }
 
   .home-nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     text-align: center;
   }
@@ -495,6 +519,48 @@ button:hover {
   .nav-item a {
     padding: 0.5rem 1rem;
     font-size: 0.95rem;
+  }
+
+  .home-nav {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--white);
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: var(--shadow);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .nav-item a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--gray);
+  }
+
+  .nav-item a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item.nav-open {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 0.5rem 0;
   }
 
   .services {
