@@ -61,7 +61,7 @@
 
         <div class="nav-item" id="primary-navigation">
           <a href="" class="nav-item1">Home</a>
-          <a href="#about" class="nav-item2">About us</a>
+          <a href="#about-header" class="nav-item2">About us</a>
           <a href="#services-head" class="nav-item3">Services</a>
           <a href="#contact" class="nav-item4">Contact us</a>
           <a
@@ -418,6 +418,16 @@
       </div>
     </section>
 
+    <!-- <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLScsY56B35-CUzXqtG1CbARKopEjd5mXAHKkfMLJudnBZrLjGg/viewform?embedded=true"
+      width="640"
+      height="887"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >Loading…</iframe
+    > -->
+
     <!-- contact us section -->
     <div class="contact" id="contact">
       <div class="contact-map">
@@ -518,7 +528,10 @@
 
         navMenu.querySelectorAll("a").forEach((link) => {
           link.addEventListener("click", () => {
-            if (window.innerWidth <= 768 && navMenu.classList.contains("nav-open")) {
+            if (
+              window.innerWidth <= 768 &&
+              navMenu.classList.contains("nav-open")
+            ) {
               navMenu.classList.remove("nav-open");
               navToggle.setAttribute("aria-expanded", "false");
             }
